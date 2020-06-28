@@ -1,0 +1,40 @@
+[
+  {
+	"id": 123,
+	"likes": 0,
+	"dateCreated": "December 11, 2019",
+    "comments": [
+      {
+        "id": 400,
+        "owner": "johndoe",
+        "text": "That looks great!",
+        "likes": 0,
+        "liked_by_viewer": false,
+        "replies": []
+      },
+      {
+        "id": 401,
+        "owner": "samsmith",
+        "text": "Wonderful photo!",
+        "likes": 0,
+        "liked_by_viewer": false,
+        "replies": [
+          {
+            "owner": "brandonpurple",
+            "text": "Agreed",
+            "likes": 0,
+            "liked_by_viewer": false
+          }
+        ]
+      },
+      {
+        "id": 402,
+        "owner": "jeffreygold",
+        "text": "Awesome!",
+        "likes": 0,
+        "liked_by_viewer": false,
+        "replies": []
+      }
+    ]
+  }
+]

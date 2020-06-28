@@ -1,0 +1,153 @@
+.Post {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	   
+	background-color: #fff;
+	background-color: rgba(255,255,255,1);
+	border: 1px solid #dbdbdb;
+	border: 1px solid rgba(219,219,219,1);
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	max-width: 80vw;
+	height: 80vh;
+	
+	.Avatar {
+		border-radius: 50%;
+		height: 24px;
+		width: 24px;
+		border: 1px solid rgb(142, 142, 142);
+		stroke: rgb(142, 142, 142);
+		stroke-width: 1px;
+	}
+
+	.Post-Image {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 5;
+		background-color: #f2f2f2;
+	}
+}
+
+.Post-Header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	height: 72px;
+	padding: 16px;
+	border-left: 1px solid rgba(239,239,239,1);
+	border-bottom: 1px solid rgba(239,239,239,1);
+	box-sizing: border-box;
+
+	.Post-Header-Body {
+		margin-left: 12px;
+		.Post-Header-Body-Content {
+			display: flex;
+		}
+	}
+
+	.Post-Header-Follow {
+
+		.Post-Header-Separator {
+			display: inline;
+			color: #262626;
+			margin-left: 4px;
+			margin-right: 4px;
+		}
+
+		> * {
+			font-size: 14px;
+		}
+	}
+
+	.Post-Header-Location {
+		color: #262626;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+	}
+}
+
+.Post-Sidebar-Comments {
+	border-left: 1px solid rgba(239,239,239,1);
+	overflow: auto;
+	padding: 0 16px;
+	height: 100%;
+}
+
+.Post-Sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 2;
+}
+.Post-Sidebar-Meta {
+	margin: 4px 0;
+	> * {
+		display: flex;
+		padding: 0px 8px;
+	}
+}
+
+.Post-Sidebar-Meta-Actions {
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid rgba(239, 239, 239, 1);
+	border-left: 1px solid rgba(239,239,239,1);
+	margin: 0;
+
+	> * {
+		align-items: center;
+		background: 0 0;
+		border: 0;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+
+		svg {
+			height: 24px;
+			width: 24px;
+			stroke-width: 1px;
+		}
+	}
+}
+
+.bookmark {
+	margin-left: auto;
+    margin-right: -10px;
+}
+
+.Post-Sidebar-Meta-Likes {
+	padding-left: 20px;
+	div {
+		font-size: 14px;
+		line-height: 18px;
+		color: #262626;
+		font-weight: 600;
+		text-align: left;
+	}
+}
+
+.Post-Sidebar-Meta-Date {
+	padding-left: 20px;
+	time {
+		background: 0 0;
+		border: 0;
+		cursor: pointer;
+		display: inline;
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 18px;
+		margin-right: 12px;
+		padding: 0;
+		color: #8e8e8e;
+		font-weight: 400;
+		text-align: left;
+	}
+}
+
+.Post-Sidebar-Textbox {
+	border-top: 1px solid #efefef;
+}

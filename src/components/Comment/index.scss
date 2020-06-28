@@ -1,0 +1,89 @@
+.Comment {
+	display: flex;
+	justify-content: space-between;
+	.Comment-Owner {
+
+	}
+
+	.Comment-Body {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		// padding: 0 16px;
+
+		.Comment-Body-Text {
+			display: flex;
+			margin-left: 12px;
+			text-align: left;
+			font-size: 14px;
+			line-height: 18px;
+			color: #262626;
+			.Comment-Body-Text-Owner {
+				font-weight: bold;
+				margin-right: 4px;
+			}
+
+			.Comment-Body-Text-Description {
+				font-weight: 400;
+			}
+		}
+
+		.Comment-Body-Actions {
+			* {
+				background: 0 0;
+				border: 0;
+				cursor: pointer;
+				display: inline;
+				font-size: 12px;
+				font-weight: 600;
+				line-height: 14px;
+				margin-right: 12px;
+				padding: 0;
+				color: #8e8e8e;
+			}
+
+			time {
+				font-weight: 400;			
+			}
+		}
+
+		.Comment-Body-Replies {
+			background: 0 0;
+			border: 0;
+			cursor: pointer;
+			display: inline;
+			font-size: 12px;
+			font-weight: 600;
+			line-height: 14px;
+			margin-right: 12px;
+			padding: 0;
+			color: #8e8e8e;
+			padding: 8px 0;
+		}
+	}
+
+	.Comment-Like {
+		.Like-Icon {
+			stroke-width: 1px;
+
+			&.active {
+				stroke: none;
+				fill: rgb(237, 73, 86);
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+button {
+	font-size: 100%;
+	font-family: inherit;
+	border: 0;
+	padding: 0;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+}
