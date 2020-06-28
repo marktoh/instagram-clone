@@ -47,7 +47,7 @@ type Props = {
 	dateCreated: string,
 	username: string,
 }
-class Post extends Component {
+class Post extends Component<Props> {
 	constructor(props) {
 		super(props);
 

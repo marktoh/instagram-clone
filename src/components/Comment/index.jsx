@@ -45,7 +45,7 @@ class Comment extends Component<Props> {
 	renderReplies = () => this.props.replies.map(reply => <Comment pic={<AvatarIcon className="Avatar" />} {...reply} onLikeClick={() => alert('to be implemented')}/>);
 
 	render() {
-		const { id, pic, owner, text, numLikes, isLiked, dateCreated, replies } = this.props;
+		const { id, pic, owner, text, numLikes, isLiked, dateCreated } = this.props;
 		return (
 			<div className="Comment">
 				<div className="Comment-Owner">
