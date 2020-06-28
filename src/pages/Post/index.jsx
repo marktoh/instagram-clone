@@ -4,8 +4,6 @@ import Post from '../../components/Post'
 
 import './index.scss';
 
-
-
 type Props = {
 	posts: {},
 }
